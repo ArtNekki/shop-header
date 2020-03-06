@@ -1,0 +1,57 @@
+.main-nav {
+  margin-top: 33px;
+  display: flex;
+  background-color: $black;
+
+  &-search {
+    margin-right: 60px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: $yellow;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    list-style: none;
+
+    a {
+      padding: 9px 15px;
+      display: block;
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 700;
+      color: $white;
+      text-decoration: none;
+    }
+
+    li:first-child {
+      background-color: $yellow;
+    }
+
+    li:first-child a {
+      padding-left: 28px;
+      color: $black;
+    }
+
+    li:last-child {
+      margin-left: auto;
+    }
+
+    li:last-child  a {
+      color: $black;
+      text-transform: uppercase;
+      background-color: $yellow;
+    }
+  }
+}
