@@ -4,13 +4,6 @@ $black: #000000;
 $gray: #707070;
 $yellow: #FECC2F;
 
-$gray-darken: #C3CFD6;
-$gray-dark: #373a3c;
-$blue: #6dd5f3;
-$blue-dark: #72C2E0;
-$pink: #f522ff;
-$purple: #5e7af4;
-
 //font
 $font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 $font-family--secondary: "Open sans";
@@ -46,7 +39,7 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1175px
+  xl: 1200px
 ) !default;
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
