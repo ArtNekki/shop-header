@@ -4,4 +4,3 @@ import 'what-input';
 import './utils/polyfill';
 
 //modules
-// import './modules/CustomScroll';
