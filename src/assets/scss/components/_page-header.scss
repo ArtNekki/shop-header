@@ -1,0 +1,137 @@
+.page-header {
+  padding-top: 20px;
+
+  &-logo {
+    display: inline-block;
+    text-decoration: none;
+
+    span {
+      display: block;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+      color: $black;
+      text-transform: uppercase;
+    }
+  }
+
+  &-nav {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $gray;
+  }
+
+  &-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+
+    &--col {
+      display: block;
+    }
+
+    li:not(:last-child) {
+      margin-right: 22px;
+    }
+
+    &--col li:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    a {
+      font-size: 12px;
+      line-height: 14px;
+      color: $black;
+      text-decoration: none;
+    }
+
+    &--underline a {
+      text-decoration: underline;
+    }
+
+    svg {
+      vertical-align: sub;
+    }
+  }
+
+  &-banner {
+    width: 255px;
+    height: 70px;
+    background: $gray;
+  }
+
+  &-goods {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+
+    li {
+      border: 1px solid $gray;
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+
+    a {
+      padding: 10px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    img {
+      display: block;
+    }
+  }
+
+  &-time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  &-tel {
+    margin: 12px 0;
+    display: block;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 700;
+    color: $black;
+    text-decoration: none;
+  }
+
+  &-city {
+    padding-top: 3px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 14px;
+    border-top: 1px solid $gray;
+
+    a {
+      position: relative;
+      color: $black;
+      text-decoration: none;
+      border-bottom: 1px dotted $black;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top:4px;
+        left: -14px;
+        width: 0;
+        height: 0;
+        border-width: 4px 7px 4px 7px;
+        border-style: solid;
+        border-color: transparent transparent transparent $black;
+      }
+    }
+  }
+}
