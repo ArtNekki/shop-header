@@ -1,9 +1,20 @@
 .main-nav {
   $border-radius: 10px;
 
+  position: relative;
   margin-top: 28px;
   display: flex;
-  background-color: $black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    z-index: -1;
+    background-color: $black;
+  }
 
   &-search {
     margin-right: 60px;
@@ -13,6 +24,8 @@
     justify-content: center;
     border: none;
     background-color: $yellow;
+    border-top-left-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
     cursor: pointer;
 
     &:focus {
@@ -52,6 +65,8 @@
       color: $black;
       text-transform: uppercase;
       background-color: $yellow;
+      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
     }
   }
 }
