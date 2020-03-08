@@ -1,0 +1,172 @@
+<!doctype html>
+<html class="no-js page" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handlebars starter kit</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+        function cth(c){document.documentElement.classList.add(c)}
+        'ontouchstart' in window?cth('touch'):cth('no-touch');
+        if(typeof InstallTrigger!=='undefined')cth('firefox');
+        if(/constructor/i.test(window.HTMLElement)||(function(p){return p.toString()==="[object SafariRemoteNotification]"})(!window['safari']||(typeof safari!=='undefined'&&safari.pushNotification)))cth('safari');
+        if(/*@cc_on!@*/false||!!document.documentMode)cth('ie');
+        if(!(/*@cc_on!@*/false||!!document.documentMode)&&!!window.StyleMedia)cth('edge');
+        if(!!window.chrome&&(!!window.chrome.webstore||!!window.chrome.runtime))cth('chrome');
+        if(~navigator.appVersion.indexOf("Win"))cth('windows');
+        if(~navigator.appVersion.indexOf("Mac"))cth('osx');
+        if(~navigator.appVersion.indexOf("Linux"))cth('linux');
+    </script>
+  </head>
+<body>
+  <div id="page" class="page-inner">
+    
+    <div class="container">
+      <header class="page-header">
+        <div class="row">
+          <div class="col-sm-auto">
+            <a href="#" class="page-header-logo">
+              <svg width="210" height="110">
+                <use xlink:href="assets/img/symbol/sprite.svg#logo" />
+              </svg>
+              <span>Магазин инструмента</span>
+            </a>
+          </div>
+          <div class="col">
+            <div class="page-header-nav">
+              <ul class="page-header-list">
+                <li>
+                  <a href="#">Каталог инструментов</a>
+                </li>
+                <li>
+                  <a href="#">Все для сада</a>
+                </li>
+                <li>
+                  <a href="#">Ручной инструмент</a>
+                </li>
+                <li>
+                  <a href="#">Электрика</a>
+                </li>
+                <li>
+                  <a href="#">Доставка</a>
+                </li>
+                <li>
+                  <a href="#">Оплата</a>
+                </li>
+                <li>
+                  <a href="#">О нас</a>
+                </li>
+              </ul>
+              <ul class="page-header-list">
+                <li>
+                  <a href="#">Вход</a>
+                </li>
+                <li class="page-header-separator">|</li>
+                <li>
+                  <a href="#">Регистрация</a>
+                </li>
+              </ul>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="page-header-banner"></div>
+              </div>
+              <div class="col-auto">
+                <ul class="page-header-list page-header-list--col page-header-list--underline">
+                  <li>
+                    <svg width="18" height="19">
+                      <use xlink:href="assets/img/symbol/sprite.svg#cart" />
+                    </svg>
+                    <a href="#">3 шт. /  17 250 р.</a>
+                  </li>
+                  <li>
+                    <svg width="18" height="15">
+                      <use xlink:href="assets/img/symbol/sprite.svg#star" />
+                    </svg>
+                    <a href="#">Избранное (7)</a>
+                  </li>
+                  <li>
+                    <svg width="18" height="16">
+                      <use xlink:href="assets/img/symbol/sprite.svg#balance" />
+                    </svg>
+                    <a href="#">К сравнению (5)</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul class="page-header-goods">
+                  <li>
+                    <a href="#">
+                      <img src="assets/img/content/good-1.png" width="51" height="51" alt="Товар 1">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="assets/img/content/good-2.png" width="45" height="37" alt="Товар 2">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="assets/img/content/good-3.png" width="53" height="40" alt="Товар 3">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col">
+                <div class="page-header-time">
+                  <b>Время работы:</b>
+                  10:00 — 19:00
+                </div>
+                <a href="tel: +495721-25-25" class="page-header-tel">8 495 721-25-25</a>
+                <div class="page-header-city">
+                  Москва
+                  <a href="#">cменить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <nav class="main-nav">
+        <button class="main-nav-search">
+          <svg width="19" height="19">
+            <use xlink:href="assets/img/symbol/sprite.svg#search" />
+          </svg>
+        </button>
+        <ul class="main-nav-list">
+          <li>
+            <a href="#">Перфораторы</a>
+          </li>
+          <li>
+            <a href="#">Дрели</a>
+          </li>
+          <li>
+            <a href="#">Шлифмашины</a>
+          </li>
+          <li>
+            <a href="#">Пистолеты</a>
+          </li>
+          <li>
+            <a href="#">Электропилы</a>
+          </li>
+          <li>
+            <a href="#">Наборы инструментов</a>
+          </li>
+          <li>
+            <a href="#">Аксессуары</a>
+          </li>
+          <li>
+            <a href="#">Распродажа</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+  </div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXu6wNP79AG7OHTlyBMRufLdjdvSmwo0A"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
