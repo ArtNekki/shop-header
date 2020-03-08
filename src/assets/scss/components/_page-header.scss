@@ -1,5 +1,5 @@
 .page-header {
-  $contact-margin: 30px;
+  $contact-margin: 27px;
 
   padding-top: 20px;
 
@@ -75,7 +75,7 @@
     }
 
     svg {
-      margin-right: 10px;
+      margin-right: 8px;
       vertical-align: sub;
     }
   }
@@ -92,13 +92,13 @@
 
   &-goods {
     margin: 0;
-    margin-left: 12px;
+    margin-left: 14px;
     padding: 0;
     display: flex;
     list-style: none;
 
     li:not(:last-child) {
-      margin-right: 10px;
+      margin-right: 12px;
     }
 
     a {
