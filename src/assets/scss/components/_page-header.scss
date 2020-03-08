@@ -1,5 +1,5 @@
 .page-header {
-  $contact-margin: 25px;
+  $contact-margin: 30px;
 
   padding-top: 20px;
 
@@ -64,6 +64,10 @@
       line-height: 14px;
       color: $black;
       text-decoration: none;
+
+      &:hover {
+        color: rgba($black, 0.6);
+      }
     }
 
     &--underline a {
@@ -93,12 +97,8 @@
     display: flex;
     list-style: none;
 
-    li {
-      border: 1px solid $gray;
-
-      &:not(:last-child) {
-        margin-right: 10px;
-      }
+    li:not(:last-child) {
+      margin-right: 10px;
     }
 
     a {
@@ -107,6 +107,11 @@
       height: 100%;
       display: flex;
       align-items: center;
+      border: 1px solid $gray;
+
+      &:hover {
+        border-color: darken($gray, 5%);
+      }
     }
 
     img {
@@ -130,6 +135,10 @@
     font-weight: 700;
     color: $black;
     text-decoration: none;
+
+    &:hover {
+      color: $gray;
+    }
   }
 
   &-city {
